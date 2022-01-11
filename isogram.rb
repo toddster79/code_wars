@@ -1,3 +1,4 @@
+# My solution
 def is_isogram string
     str = string.split("")
     str_arr = str.uniq
@@ -13,6 +14,18 @@ def is_isogram string
         p false
     end
 end
+
+# Best solution
+def is_isogram(string)
+    if string.downcase.chars.uniq == string.downcase.chars
+        p true
+    else 
+        p false
+    end
+end
+
+is_isogram "moOse"
+#=> false
 
 
 
